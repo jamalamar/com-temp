@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import HomepageLayout from './Views/landing.js'
+
+import Homepage from './Views/HomePage.js'
 
 function App() {
   return (
     <div className="App">
-      <HomepageLayout/>
+      <Homepage/>
     </div>
   );
 }
