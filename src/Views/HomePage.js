@@ -16,6 +16,8 @@ import {
   Visibility,
 } from 'semantic-ui-react'
 
+import HeaderImg from '../Assets/header-background.jpg'
+
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
 // For more advanced usage please check Responsive docs under the "Usage" section.
@@ -84,8 +86,10 @@ class DesktopContainer extends Component {
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
         >
+
           <Segment
             inverted
+            id="header-background"
             textAlign='center'
             style={{ minHeight: 700, padding: '1em 0em' }}
             vertical
@@ -97,6 +101,7 @@ class DesktopContainer extends Component {
               secondary={!fixed}
               size='large'
             >
+
               <Container>
                 <Menu.Item as='a' active>
                   Home
@@ -114,7 +119,7 @@ class DesktopContainer extends Component {
                 </Menu.Item>
               </Container>
             </Menu>
-            <HomepageHeading />
+            <HomepageHeading/>
           </Segment>
         </Visibility>
 
@@ -211,7 +216,7 @@ ResponsiveContainer.propTypes = {
 }
 
 const HomepageLayout = () => (
-  <ResponsiveContainer>
+  <ResponsiveContainer >
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
