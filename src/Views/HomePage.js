@@ -17,6 +17,11 @@ import {
 } from 'semantic-ui-react'
 
 import HeaderImg from '../Assets/header-background.jpg'
+import StockOne from '../Assets/stock-one.jpg'
+import StockrTwo from '../Assets/stock-two.jpg'
+import StockThree from '../Assets/stock-three.jpg'
+import StockFour from '../Assets/stock-four.jpg'
+import Woman from '../Assets/woman.jpg'
 
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
@@ -55,7 +60,7 @@ const HomepageHeading = ({ mobile }) => (
       }}
     />
     <Button primary size='huge'>
-      Get Started
+      Buscar
       <Icon name='right arrow' />
     </Button>
   </Container>
@@ -99,19 +104,19 @@ class DesktopContainer extends Component {
               inverted={!fixed}
               pointing={!fixed}
               secondary={!fixed}
-              size='large'
+              size='large'            
             >
 
-              <Container>
+              <Container >
                 <Menu.Item as='a' active>
-                  Home
+                  Inicio
                 </Menu.Item>
                 <Menu.Item as='a'>Automóvil</Menu.Item>
                 <Menu.Item as='a'>Medico</Menu.Item>
                 <Menu.Item as='a'>Vida</Menu.Item>
                 <Menu.Item position='right'>
                   <Button as='a' inverted={!fixed}>
-                    Log in
+                    Log In
                   </Button>
                   <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
                     Sign Up
@@ -159,7 +164,7 @@ class MobileContainer extends Component {
           visible={sidebarOpened}
         >
           <Menu.Item as='a' active>
-            Home
+            Inicio
           </Menu.Item>
           <Menu.Item as='a'>Automóvil</Menu.Item>
           <Menu.Item as='a'>Medico</Menu.Item>
@@ -237,7 +242,7 @@ const HomepageLayout = () => (
             </p>
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
-            <Image bordered rounded size='large' src='/images/wireframe/white-image.png' />
+            <Image bordered rounded size='large' src={StockFour} />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -261,7 +266,7 @@ const HomepageLayout = () => (
               "I shouldn't have gone with their competitor."
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/images/avatar/large/nan.jpg' />
+              <Image avatar src={Woman} />
               <b>Nan</b> Chief Fun Officer Acme Toys
             </p>
           </Grid.Column>
