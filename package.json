@@ -10,6 +10,7 @@
     "react-dom": "^16.8.6",
     "react-hot-loader": "^4.12.0",
     "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-static": "^7.1.0",
     "react-static-routes": "^1.0.0",
