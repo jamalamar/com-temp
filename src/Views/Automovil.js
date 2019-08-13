@@ -1,13 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-function About() {
+function Automovil() {
   return (
 	<React.Fragment>
-		<h1>About</h1>
+		<h1>Automovil</h1>
 		<Link to="/">Back Home</Link>
 	</React.Fragment>
   );
 }
 
-export default About;
+export default Automovil;
