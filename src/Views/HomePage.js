@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom';
 import {
   Button,
   Container,
@@ -108,12 +109,10 @@ class DesktopContainer extends Component {
             >
 
               <Container >
-                <Menu.Item as='a' active>
-                  Inicio
-                </Menu.Item>
-                <Menu.Item as='a'>Automóvil</Menu.Item>
-                <Menu.Item as='a'>Medico</Menu.Item>
-                <Menu.Item as='a'>Vida</Menu.Item>
+                <Link to='/'><Menu.Item as='a' active>Inicio</Menu.Item></Link>
+                <Link to='/automovil'><Menu.Item as='a'>Automóvil</Menu.Item></Link>
+                <Link to='/medico'><Menu.Item as='a'>Medico</Menu.Item></Link>
+                <Link to='/vida'><Menu.Item as='a'>Vida</Menu.Item></Link>
                 <Menu.Item position='right'>
                   <Button as='a' inverted={!fixed}>
                     Log In
